@@ -17,14 +17,14 @@
 //         mobileMenu.classList.remove('max-h-screen');
 //     });
 // });
-// // Shadow Sewaktu Scroll
-// window.addEventListener('scroll', () => {
-//     const header = document.querySelector('header');
-//     if (window.scrollY > 10) {
-//         header.classList.add('shadow-md');
-//         header.classList.remove('shadow-sm');
-//     } else {
-//         header.classList.remove('shadow-md');
-//         header.classList.add('shadow-sm');
-//     }
-// });
+// Shadow Sewaktu Scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 10) {
+        header.classList.add('shadow-md');
+        header.classList.remove('shadow-sm');
+    } else {
+        header.classList.remove('shadow-md');
+        header.classList.add('shadow-sm');
+    }
+});
