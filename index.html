@@ -1,132 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RANDANG ZARA</title>
-      <link rel="icon" type="image/png" href="assets/rendang zara 1x1.png" />
-  </head>
-  <body>
+    <link rel="icon" type="image/png" href="assets/rendang zara 1x1.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <!-- Logo -->
-          <div class="flex items-center space-x-2">
-            <img src="assets/rendang zara 1x1.png" alt="Company logo - Abstract geometric shape in indigo and teal gradient" class="h-10 w-10 rounded-lg" />
-            <span class="text-xl font-bold text-gray-800">Randang Zara</span>
-          </div>
-          <!-- Desktop Navigation -->
-          <!-- <nav class="hidden md:flex items-center space-x-8">
-            <a href="#" class="nav-link text-gray-600 hover:text-indigo-600 font-medium">Home</a>
-            <a href="#" class="nav-link text-gray-600 hover:text-indigo-600 font-medium">Features</a>
-            <a href="#" class="nav-link text-gray-600 hover:text-indigo-600 font-medium">Pricing</a>
-            <a href="#" class="nav-link text-gray-600 hover:text-indigo-600 font-medium">About</a>
-            <a href="#" class="nav-link text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
-          </nav> -->
-          <!-- CTA Buttons - Desktop -->
-          <!-- <div class="hidden md:flex items-center space-x-4">
-            <a href="#" class="px-4 py-2 text-indigo-600 font-medium hover:bg-indigo-50 rounded-lg transition">Sign In</a>
-            <a href="#" class="px-6 py-2 bg-indigo-600 text-white font-medium hover:bg-indigo-700 rounded-lg transitionshadow-md">Sign Up</a>
-          </div> -->
-          <!-- Mobile Menu Button -->
-          <!-- <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
-            <span class="block w-6 h-0.5 bg-gray-700 mb-1.5"></span>
-            <span class="block w-6 h-0.5 bg-gray-700 mb-1.5"></span>
-            <span class="block w-6 h-0.5 bg-gray-700"></span>
-          </button> -->
-        </div>
-        <!-- Mobile Navigation -->
-        <!-- <div id="mobile-menu" class="mobile-menu md:hidden hidden max-h-0 overflow-hidden">
-          <div class="flex flex-col space-y-4 pb-4 pt-2 px-4">
-            <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Home</a>
-            <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Features</a>
-            <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Pricing</a>
-            <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">About</a>
-            <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
-            <div class="pt-4 space-y-3 border-t border-gray-200">
-              <a href="#" class="block text-center px-4 py-2 text-indigo-600 font-medium hover:bg-indigo-50 rounded-lgtransition">Sign In</a>
-              <a href="#" class="block text-center px-4 py-2 bg-indigo-600 text-white font-medium hover:bg-indigo-700 rounded-lgtransition shadow-md">Sign Up</a>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="assets/rendang zara 1x1.png" 
+                             alt="Randang Zara Logo" 
+                             class="logo-img" />
+                        <div class="logo-overlay"></div>
+                    </div>
+                    <span class="logo-text">Randang Zara</span>
+                </div>
+                
+                <!-- Animated decoration -->
+                <div class="header-decoration">
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                </div>
             </div>
-          </div>
-        </div> -->
-      </div>
+        </div>
     </header>
-    <script src="script.js"></script>
 
-    <!-- hero -->
-    <section class="bg-gray-50 py-16 px-4">
-      <div class="container mx-auto max-w-6xl">
-        <div class="flex flex-col md:flex-row items-center gap-8">
-          <!-- Product Intro -->
-          <div class="md:w-1/2 space-y-6">
-            <h1 class="text-4xl font-bold text-yellow-600">RANDANG ZARA</h1>
-            <p class="text-lg text-gray-600">Autentik dan Lezat — Cita Rasa Masakan Tradisional Khas Minang yang Menggugah Selera, Dibuat dengan Cinta dan Rempah Pilihan</p>
-            <!-- Social Links -->
-            <div class="flex flex-wrap gap-6 mt-6 justify-center">
-              <!-- TikTok -->
-              <div class="group flex flex-col items-center">
-                <a href="https://www.tiktok.com/@randangzara?_t=ZS-8yEKrHBtKq8&_r=1" target="_blank" class="w-10 h-10 flex items-center justify-center text-xl rounded-full bg-black text-white hover:bg-gray-800 transition-colors duration-200">
-                  <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <span class="mt-1 text-sm opacity-50 group-hover:opacity-100 text-gray-600 group-hover:text-black transition-all duration-200"> TikTok </span>
-              </div>
-
-              <!-- Instagram -->
-              <div class="group flex flex-col items-center">
-                <a
-                  href="https://www.instagram.com/randang.zara?igsh=MWxrdG1pcHR0NDJ6bQ=="
-                  target="_blank"
-                  class="w-10 h-10 flex items-center justify-center text-xl rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 text-white hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 transition-colors duration-200"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <span class="mt-1 text-sm opacity-50 group-hover:opacity-100 text-pink-600 transition-all duration-200"> Instagram </span>
-              </div>
-
-              <!-- Shopee -->
-              <div class="group flex flex-col items-center">
-                <a href="https://id.shp.ee/L1nyX69" target="_blank" class="w-10 h-10 flex items-center justify-center text-xl rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors duration-200">
-                  <i class="fa-solid fa-bag-shopping"></i>
-                </a>
-                <span class="mt-1 text-sm opacity-50 group-hover:opacity-100 text-orange-600 transition-all duration-200"> Shopee </span>
-              </div>
-
-              <!-- Maps -->
-              <div class="group flex flex-col items-center">
-                <a href="https://share.google/8VR347RZsDnHn7RAs" target="_blank" class="w-10 h-10 flex items-center justify-center text-xl rounded-full bg-red-500 text-white hover:bg-red-600 transition-colors duration-200">
-                  <i class="fa-solid fa-map-location-dot"></i>
-                </a>
-                <span class="mt-1 text-sm opacity-50 group-hover:opacity-100 text-red-600 transition-all duration-200"> Maps </span>
-              </div>
-
-              <!-- GoFood -->
-              <div class="group flex flex-col items-center">
-                <a href="https://gofood.link/a/xnMhDko" target="_blank" class="w-10 h-10 flex items-center justify-center text-xl rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors duration-200">
-                  <i class="fa-solid fa-burger"></i>
-                </a>
-                <span class="mt-1 text-sm opacity-50 group-hover:opacity-100 text-green-700 transition-all duration-200"> GoFood </span>
-              </div>
-            </div>
-          </div>
-          <!-- Gambar  -->
-          <div class="md:w-1/2">
-            <img src="assets/produk randang zara.png" alt="Featured product with premium packaging" class="rounded-lg shadow-md w-full" />
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background decorative elements -->
+        <div class="hero-bg">
+            <div class="hero-bg-element"></div>
+            <div class="hero-bg-element"></div>
+            <div class="hero-bg-element"></div>
         </div>
-      </div>
+
+        <div class="hero-content">
+            <div class="hero-grid">
+                <!-- Product Intro -->
+                <div class="hero-text">
+                    <!-- Main title with gradient effect -->
+                    <div class="title-section">
+                        <h1 class="main-title">RANDANG ZARA</h1>
+                        <div class="title-underline"></div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <p class="description-main">
+                            <span class="description-highlight">Autentik dan Lezat</span> — 
+                            Cita Rasa Masakan Tradisional Khas Minang yang Menggugah Selera
+                        </p>
+                        <p class="description-sub">
+                            Dibuat dengan Cinta dan Rempah Pilihan
+                        </p>
+                    </div>
+
+                    <!-- Interactive features badge -->
+                    <div class="features-badges">
+                        <span class="feature-badge yellow">
+                            🌶️ Rempah Asli
+                        </span>
+                        <span class="feature-badge orange">
+                            👨‍🍳 Resep Turun Temurun
+                        </span>
+                        <span class="feature-badge red">
+                            🚚 Antar Jemput
+                        </span>
+                    </div>
+
+                    <!-- Enhanced Social Links -->
+                    <div class="social-section">
+                        <h3 class="social-title">Temukan Kami Di:</h3>
+                        <div class="social-grid">
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@randangzara?_t=ZS-8yEKrHBtKq8&_r=1" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-card"
+                               data-social="tiktok">
+                                <div class="social-icon tiktok">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name tiktok">TikTok</span>
+                                    <p class="social-description">Video resep dan tips masak</p>
+                                </div>
+                                <div class="social-border"></div>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/randang.zara?igsh=MWxrdG1pcHR0NDJ6bQ==" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-card"
+                               data-social="instagram">
+                                <div class="social-icon instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name instagram">Instagram</span>
+                                    <p class="social-description">Foto produk & testimoni</p>
+                                </div>
+                                <div class="social-border"></div>
+                            </a>
+
+                            <!-- Shopee -->
+                            <a href="https://id.shp.ee/L1nyX69" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-card"
+                               data-social="shopee">
+                                <div class="social-icon shopee">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name shopee">Shopee</span>
+                                    <p class="social-description">Belanja online mudah</p>
+                                </div>
+                                <div class="social-border"></div>
+                            </a>
+
+                            <!-- Maps -->
+                            <a href="https://share.google/8VR347RZsDnHn7RAs" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-card"
+                               data-social="maps">
+                                <div class="social-icon maps">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name maps">Maps</span>
+                                    <p class="social-description">Lokasi toko fisik</p>
+                                </div>
+                                <div class="social-border"></div>
+                            </a>
+
+                            <!-- GoFood -->
+                            <a href="https://gofood.link/a/xnMhDko" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-card"
+                               data-social="gofood">
+                                <div class="social-icon gofood">
+                                    <i class="fa-solid fa-burger"></i>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name gofood">GoFood</span>
+                                    <p class="social-description">Pesan antar cepat</p>
+                                </div>
+                                <div class="social-border"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Call to action -->
+                    <div class="cta-buttons">
+                        <a href="https://id.shp.ee/L1nyX69"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="cta-button cta-primary">
+                            🛒 Pesan Sekarang
+                        </a>
+                        <a href="https://gofood.link/a/xnMhDko"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="cta-button cta-secondary">
+                            🍽️ Order GoFood
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Image -->
+                <div class="product-section">
+                    <div class="product-container">
+                        <!-- Main product image -->
+                        <div class="product-image-wrapper">
+                            <img src="assets/produk randang zara logo tengah.png" 
+                                 alt="Produk Randang Zara yang lezat dan autentik" 
+                                 class="product-image" />
+                            
+                            <!-- Overlay gradient -->
+                            <div class="product-overlay"></div>
+                        </div>
+
+                        <!-- Floating elements -->
+                        <div class="floating-element floating-fire">
+                            🔥
+                        </div>
+                        <div class="floating-element floating-star">
+                            ⭐
+                        </div>
+
+                        <!-- Product info cards -->
+                        <div class="product-info-card product-info-left">
+                            <p class="product-info-title">Premium Quality</p>
+                            <p class="product-info-subtitle">Bahan pilihan terbaik</p>
+                        </div>
+
+                        <div class="product-info-card product-info-right">
+                            <p class="product-info-title">Halal & Fresh</p>
+                            <p class="product-info-subtitle">Terjamin kehalalannya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial section -->
+            <div class="testimonial">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Randang terenak yang pernah saya coba! Rasa rempahnya benar-benar autentik dan mengingatkan kampung halaman."
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-author">- Pelanggan Setia Randang Zara</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="bg-gray-400 text-white py-4 mt-10">
-      <div class="container mx-auto text-center text-sm">
-        &copy; 2025 Randang Zara. All rights reserved.<br>
-      </div>
-    </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Background pattern -->
+        <div class="footer-bg"></div>
 
-  </body>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and company name -->
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <span>RZ</span>
+                    </div>
+                    <span class="footer-logo-text">Randang Zara</span>
+                </div>
+
+                <!-- Company description -->
+                <p class="footer-description">
+                    Menghadirkan cita rasa autentik Minang dengan kualitas terbaik untuk keluarga Indonesia
+                </p>
+
+                <!-- Contact info -->
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+62 895-0382-8151</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>randangzara@tugas.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <span>Padang, Sumatera Barat</span>
+                    </div>
+                </div>
+
+                <!-- Separator -->
+                <div class="footer-separator"></div>
+
+                <!-- Copyright -->
+                <div class="footer-copyright">
+                    <p class="footer-copyright-text">
+                        &copy; <span id="currentYear"></span> Randang Zara. All rights reserved.
+                    </p>
+                    <p class="footer-made-with">
+                        Made with ❤️ for authentic Minang cuisine lovers
+                    </p>
+                </div>
+
+                <!-- Additional links -->
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated bottom border -->
+        <div class="footer-border"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
